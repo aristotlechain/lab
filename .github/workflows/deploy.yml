@@ -25,5 +25,5 @@ jobs:
 
     - name: Deploy with Kustomize
       run: |
-        cd kustomize/overlays/dev
+        cd aks-store-demo/kustomize/overlays/dev
         kustomize build . | kubectl apply -f -
